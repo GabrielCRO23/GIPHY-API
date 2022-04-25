@@ -9,16 +9,15 @@
     <script defer src="javascript.js"></script>
 </head>
 <body>
+    <div class ='search-text'>Search for any gif, your gif will display below!</div>
+    <div class = "form-container">
+    <form>
+    <input type="text" id="gif-search" name="gif-search" value="">
+    <button type="submit" id ="submitButton">SEARCH</button>
+    </div>
+    </form>
+    <div class = "gif-container">
     <img src="#">
-    <script>
-     const img = document.querySelector('img');
-  fetch('https://api.giphy.com/v1/gifs/translate?api_key=pW7uIB6KQgumUt6HNinFio0VWggEB8LZ&s=cats', {mode: 'cors'})
-    .then(function(response) {
-      return response.json();
-    })
-    .then(function(response) {
-      img.src = response.data.images.original.url;
-    });
-  </script>
+    </div>
 </body>
 </html>
