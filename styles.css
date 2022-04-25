@@ -33,3 +33,7 @@ button[type=submit] {
     justify-content: center;
     font-weight: 700;
 }
+
+img {
+    display: none;
+}

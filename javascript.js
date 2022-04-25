@@ -16,6 +16,7 @@ const submitButton = document.querySelector('#submitButton')
     */    
 
     submitButton.addEventListener('click', function() {
+        img.style.display = 'block'
         let searchFunction = document.getElementById('gif-search').value;
         event.preventDefault()
         fetch(`https://api.giphy.com/v1/gifs/translate?api_key=pW7uIB6KQgumUt6HNinFio0VWggEB8LZ&s=${searchFunction}`, {mode: 'cors'})
